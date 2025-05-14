@@ -1,132 +1,96 @@
+/*Mobile Style*/
 body {
     background-color: rgb(249,242,228);
 }
 
+/*Header and it's elements*/
 header {
     display: flex;
     flex-direction: column;
     width:100%;
     background-color: rgb(249,242,228);
 }
-#logo #imgLogo{
+#logo #imgLogo{     /*Logo*/
     width: 100%;
     height: auto;
 }
-#slogan h1 {
-    text-align: center;
-    justify-content: center;
+#slogan h1 {    /*Slogan: Fluffy Butt Hutt*/
+    text-align: center;     /*Centers <h1> horizontally in it's parent element*/
     color: rgb(152,111,77);
     font-family: cursive;
     font-size: 2rem;
 }
 
+/*Navigation and it's elements*/
 nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;    /*Centers the <ul> container on the cross axis of the <nav> flex container*/
+    justify-content: center;    /*Centers the <ul> container on the main axis of the <nav> flex container*/
     width: 100%;
     background-color: rgb(249, 242, 228);
+    padding: 2rem 0 2rem 0;     /*Giving space around <nav> container for visual appeal*/
 }
-
 ul {
     display: flex;
-    list-style-type: none;
-    justify-content: center;     /* Keep links centered */
-    gap: 1rem;                   
-    margin: 0;
-    padding: 0;
+    list-style-type: none;      /*Removing list bullets*/
+    justify-content: center;     /*Centers the <li> items on the main axis of the <ul> flex container*/
+    gap: 1rem;      /*Creating space between <li> items*/
+    margin: 0;      /*Set to zero to prevent spaces*/
+    padding: 0;     /*Set to 0 to remove spaces*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(249, 242, 228);
 }
-
 li a {
-    text-decoration: none;
-    display: block;
-    padding: 1rem;
+    text-decoration: none;      /*Removing link underline from <a>*/
+    padding: 1rem;      /*Giving space around <li> characters for visual appeal*/
     color: black;
     border: .18rem solid;
 }
 
-nav ul li a:hover {
-    background-color: rgb(152, 111, 77);
+/*main and it's elements*/
+main {
+    width: 100%;
+    background-color: rgb(249,242,228);
 }
-
-
 article {
     width: 100%;
     background-color: rgb(249,242,228);
 }
+
+/*section and it's elements*/
 section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;    /*Setting the direction of flex to list elements vertically in the <section> container*/
+    align-items: center;    /*Centers elements in the <section> container horizontally */
 }
-#eggs {
-    text-align: center;
+.product {
+    text-align: center;     /*Centering <h1> characters horizontally in its <div> container*/
     width: 18.75rem;
     font-family: cursive;
-}
-#eggs:hover {
-    font-size: larger;
-}
-#eggs #eggsPhoto {
-    width: 18.75rem;
-    border: solid black;
-    border-radius: 10px;
-}
-#eggs #eggsPhoto:hover {
-    border: 0.375rem solid black;
-}
-#bread {
-    text-align: center;
-    width: 18.75rem;
-    font-family: cursive;
-}
-#bread:hover {
-    font-size: larger;
-}
-#bread #breadPhoto {
-    width: 18.75rem;
-    border: solid black;
-    border-radius: 0.625rem;
-}
-#bread #breadPhoto:hover {
-    border: 0.375rem solid black;
-}
-#vegetables {
-    text-align: center;
-    width: 18.75rem;
-    font-family: cursive;
-}
-#vegetables:hover {
-    font-size: larger;
-}
-#vegetables #vegetablesPhoto {
-    width: 18.75rem;
-    border: solid black;
-    border-radius: 10px;
-}
-#vegetables #vegetablesPhoto:hover {
-    border: 0.375rem solid black;
-}
-#desert {
-    text-align: center;
-    width: 18.75rem;
-    font-family: cursive;
-}
-#desert:hover {
-    font-size: larger;
-}
-#desert #desertPhoto {
-    width: 18.75rem;
-    border: solid black;
-    border-radius: 0.625rem;
-}
-#desert #desertPhoto:hover {
-    border: 0.375rem solid black;
 }
 
+.productPhoto {
+    width: 18.75rem;
+    border: solid black;
+    border-radius: 0.625rem;
+}
+
+/*footer*/
 footer {
     width: 100%;
     background-color: rgb(249,242,228);
+}
+
+/*Desktop style*/
+@media (min-width: 1024px) {
+    .product:hover {
+        font-size: larger;
+    }
+    .productPhoto:hover {
+        border: 0.375rem solid black;
+    }
+
+    nav ul li a:hover {
+        background-color: rgb(152, 111, 77);
+    }   
 }
