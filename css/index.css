@@ -82,7 +82,38 @@ footer {
 }
 
 /*Desktop style*/
-@media (min-width: 1024px) {
+@media (min-width: 1300px) {
+    body {
+        background-color: white;
+        padding: 0 2rem 0 2rem ;
+    }
+    header {
+        display: flex;
+        width:100%;
+        background-color: rgb(249,242,228);
+        align-items: center;
+        gap: 15rem;
+    }
+    #logo {
+        display: flex;
+    }
+    #imgLogo{
+        width: 18.75rem;
+    }
+    #slogan {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(249,242,228);
+
+    }
+    h1 {
+        display: flex;
+        text-align: center;
+        color: rgb(152,111,77);
+        font-family: cursive;
+        font-size: 3.75rem;
+    }
+
     .product:hover {
         font-size: larger;
     }
@@ -94,3 +125,4 @@ footer {
         background-color: rgb(152, 111, 77);
     }   
 }
+

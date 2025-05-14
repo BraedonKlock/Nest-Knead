@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desert - Nest & Knead</title>
+    <title>Dessert - Nest & Knead</title>
     <link rel="styleSheet" type="text/css" href="css/dessert.css">
 </head>
 <body>
     <div id="container"> 
         <header>
             <div id="logo"><a href="index.html"><img id ="imgLogo" src="photos/logo.png"></a></div>
-            <div id="slogan"><h1>Deserts</h1></div>
+            <div id="slogan"><h1>Dessert</h1></div>
         </header>
         <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <div id="eggs"><p id="eggsText">Farm fresh Eggs</p><a href="eggs.html"><img id="eggsPhoto" src="photos/eggs.jpg"></a></div>
-            <div id="bread"><p>Sourdough Bread</p><a href="bread.html"><img id="breadPhoto" src="photos/bread.jpg"></a></div>
-            <div id="vegetables"><p>Garden Vegetables</p><a href="vegetables.html"><img id="vegetablesPhoto" src="photos/vegetables.jpg"></a></div>
-            <div id="dessert"><p>Desert</p><a href="dessert.html"><img id="dessertPhoto" src="photos/dessert.jpg"></a></div>
+            <section id="navLeft">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="contact.html">CART</a></li>
+                </ul>
+            </section >
+            <section id="navRight">
+                <div  class="product" id="eggs"><p id="eggsText">Farm fresh Eggs</p><a href="eggs.html"><img id="eggsPhoto" src="photos/eggs.jpg"></a></div>
+                <div class="product"><p>Sourdough Bread</p><a href="bread.html"><img class="productPhoto" src="photos/bread.jpg"></a></div>
+                <div class="product"><p>Garden Vegetables</p><a href="vegetables.html"><img class="productPhoto" src="photos/vegetables.jpg"></a></div>
+                <div class="product"><p>Dessert</p><a href="dessert.html"><img class="productPhoto" src="photos/dessert.jpg"></a></div>
+            </section>
         </nav>
-        <article>
+        <main>
             <table>
                 <tr>
                     <th>Deserts</th>
@@ -45,7 +50,7 @@
                     <td>$3.00<br>$5.00</td>
                 </tr>
             </table>
-        </article>
+        </main>
         <footer></footer>
     </div>
 </body>
