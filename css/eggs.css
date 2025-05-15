@@ -1,33 +1,33 @@
 @media (min-width: 1300px) {    
     body {
         background-color: white;
-        padding: 0 2rem 0 2rem ;
+        padding: 0 2vw 0 2vw ;
     }
     header {
         display: flex;
         width:100%;
         background-color: rgb(249,242,228);
         align-items: center;
-        gap: 15rem;
+        gap: 15vw;
     }
     #logo {
         display: flex;
+        width: 25%;
     }
     #imgLogo{
-        width: 18.75rem;
+        width: 100%;
     }
     #slogan {
         display: flex;
         justify-content: center;
         background-color: rgb(249,242,228);
-
     }
     h1 {
         display: flex;
         text-align: center;
         color: rgb(152,111,77);
         font-family: cursive;
-        font-size: 3.75rem;
+        font-size: 4vw;
     }
     nav {
         display: flex;
@@ -42,60 +42,64 @@
     ul {
         display: flex;
         list-style-type: none;
-        gap: 1rem;
+        gap: 1vw;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
         background-color: rgb(249,242,228);   
-        padding: 0 0 0 0.9rem;  
     }
     li a {
         text-decoration: none;
-        padding: 1.0625rem;
+        padding: 1.0625vw;
         color: black;
-        border: 0.0625rem solid;
+        border: 0.0625vw solid;
     }
     nav ul li a:hover {
         background-color: rgb(152,111,77);
     }
     #navRight {
-        margin-left: 8rem;
+        margin-left: 4vw;
         display: flex;
-        gap: 2rem;
+        gap: 2vw;
         background-color: rgb(249,242,228);
     }
     .product {
         text-align: center;
         font-family: cursive;
-        font-size: 0.9375rem;
+        font-size: 0.9375vw;
         font-weight: bold;
+        width: 17%;
     }
     .productPhoto {
-        width: 150px;
+        width: 100%;
         border: solid black;
-        border-radius: 0.625rem;
+        border-radius: 0.625vw;
     }
     .product:hover {
-        font-size: 1.0625rem ;
+        font-size: 1.0625vw ;
     }
     .productPhoto:hover {
-        border: 0.375rem solid black;
+        border: 0.375vw solid black;
     }
-    #eggs #eggsPhoto {
-        width: 175px;
+    #eggs {
+        width: 21.3%;
+        background-color: rgb(249,242,228);
+    }
+    #eggsPhoto {
+        width: 96%;
         border: solid black;
-        border-radius: 0.625rem;
+        border-radius: 0.625vw;
     }
     #eggs #eggsPhoto:hover {
-        border: 0.375rem solid black;
+        border: 0.375vw solid black;
     }
     main  {
-        padding: 4rem 0 4rem 0;
+        padding: 4vw 0 4vw 0;
         text-align: center;
         width: 100%;
         background-color: rgb(249,242,228);
     }
     #description {
         font-family: cursive;
-        font-size: 1.25rem;
+        font-size: 1.25vw;
     }
     footer {
         width: 100%;

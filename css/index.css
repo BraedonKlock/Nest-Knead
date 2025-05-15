@@ -99,7 +99,7 @@
 @media (min-width: 1300px) {
     body {
         background-color: white;
-        padding: 0 2rem 0 2rem ;
+        padding: 0 2vw 0 2vw;
     }
     header {
         display: flex;
@@ -137,22 +137,20 @@
     }
   nav {
         display: flex;
-        width: 96.3%;
+        width: 97.3;
         background-color: rgb(249,242,228);
-        padding-left: 3.5vw;
+        padding-left: 2vw;
     }
-
     ul {
         display: flex;
         list-style-type: none;
-        gap: 1rem;
+        gap: 1vw;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
         background-color: rgb(249,242,228);   
-        padding: 0 0 0 0.9rem;  
     }
     li a {
         text-decoration: none;
-        padding: 1.0625rem;
+        padding: 1vw;
         color: black;
         border: 0.0625rem solid;
     }
@@ -162,7 +160,7 @@
     main  {
         display: flex;
         justify-content: center;
-        padding: 4rem 0 4rem 0;
+        padding: 4vw 0 4vw 0;
         width: 100%;
         background-color: rgb(249,242,228);
     }
@@ -184,13 +182,13 @@
         width:85%;
         max-width: 350px;
         border: solid black;
-        border-radius: 0.625rem;
+        border-radius: 0.625vw;
     }
     .product:hover {
         font-size: 1.6vw ;
     }
     .productPhoto:hover {
-        border: .4rem solid black;
+        border: .4vw solid black;
     }
     #eggs {
         padding-right: 1.2vw;
@@ -206,10 +204,10 @@
         width: 95%;
         max-width: 369px;
         border: solid black;
-        border-radius: 0.625rem;
+        border-radius: 0.625vw;
     }
     #eggsPhoto:hover {
-        border: .4rem solid black;
+        border: .4vw solid black;
     }
     footer {
         width: 100%;
