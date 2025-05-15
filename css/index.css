@@ -1,84 +1,98 @@
 /*Mobile Style*/
-body {
-    background-color: rgb(249,242,228);
-}
+@media  (max-width: 1299px) {
+    body {
+        background-color: rgb(249, 242, 228);
+    }
 
-/*Header and it's elements*/
-header {
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    background-color: rgb(249,242,228);
-}
-#logo #imgLogo{     /*Logo*/
-    width: 100%;
-    height: auto;
-}
-#slogan h1 {    /*Slogan: Fluffy Butt Hutt*/
-    text-align: center;     /*Centers <h1> horizontally in it's parent element*/
-    color: rgb(152,111,77);
-    font-family: cursive;
-    font-size: 2rem;
-}
+    /*Header and it's elements*/
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        background-color: rgb(249, 242, 228);
+    }
+    #logo {
+        background-color: rgb(249, 242, 228);
+    }
+    #imgLogo{     /*Logo*/
+        width: 400px;
+    }
+    #slogan {
+        background-color: rgb(249, 242, 228);
+    }
+    
+    h1 {    /*Slogan: Fluffy Butt Hutt*/
+        text-align: center;     /*Centers <h1> horizontally in it's parent element*/
+        color: rgb(152,111,77);
+        font-family: cursive;
+        font-size: 2rem;
+    }
 
-/*Navigation and it's elements*/
-nav {
-    display: flex;
-    align-items: center;    /*Centers the <ul> container on the cross axis of the <nav> flex container*/
-    justify-content: center;    /*Centers the <ul> container on the main axis of the <nav> flex container*/
-    width: 100%;
-    background-color: rgb(249, 242, 228);
-    padding: 2rem 0 2rem 0;     /*Giving space around <nav> container for visual appeal*/
-}
-ul {
-    display: flex;
-    list-style-type: none;      /*Removing list bullets*/
-    justify-content: center;     /*Centers the <li> items on the main axis of the <ul> flex container*/
-    gap: 1rem;      /*Creating space between <li> items*/
-    margin: 0;      /*Set to zero to prevent spaces*/
-    padding: 0;     /*Set to 0 to remove spaces*/
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(249, 242, 228);
-}
-li a {
-    text-decoration: none;      /*Removing link underline from <a>*/
-    padding: 1rem;      /*Giving space around <li> characters for visual appeal*/
-    color: black;
-    border: .18rem solid;
-}
+    /*Navigation and it's elements*/
+    nav {
+        display: flex;
+        align-items: center;    /*Centers the <ul> container on the cross axis of the <nav> flex container*/
+        justify-content: center;    /*Centers the <ul> container on the main axis of the <nav> flex container*/
+        width: 100%;
+        background-color: rgb(249, 242, 228);
+        padding: 2rem 0 2rem 0;     /*Giving space around <nav> container for visual appeal*/
+    }
+    ul {
+        display: flex;
+        list-style-type: none;      /*Removing list bullets*/
+        justify-content: center;     /*Centers the <li> items on the main axis of the <ul> flex container*/
+        gap: 1rem;      /*Creating space between <li> items*/
+        margin: 0;      /*Set to zero to prevent spaces*/
+        padding: 0;     /*Set to 0 to remove spaces*/
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(249, 242, 228);
+    }
+    li a {
+        text-decoration: none;      /*Removing link underline from <a>*/
+        padding: 1rem;      /*Giving space around <li> characters for visual appeal*/
+        color: black;
+        border: .18rem solid;
+    }
 
-/*main and it's elements*/
-main {
-    width: 100%;
-    background-color: rgb(249,242,228);
-}
-article {
-    width: 100%;
-    background-color: rgb(249,242,228);
-}
+    /*main and it's elements*/
+    main {
+        width: 100%;
+        background-color: rgb(249,242,228);
+    }
 
-/*section and it's elements*/
-section {
-    display: flex;
-    flex-direction: column;    /*Setting the direction of flex to list elements vertically in the <section> container*/
-    align-items: center;    /*Centers elements in the <section> container horizontally */
-}
-.product {
-    text-align: center;     /*Centering <h1> characters horizontally in its <div> container*/
-    width: 18.75rem;
-    font-family: cursive;
-}
+    /*section and it's elements*/
+    section {
+        display: flex;
+        flex-direction: column;    /*Setting the direction of flex to list elements vertically in the <section> container*/
+        align-items: center;    /*Centers elements in the <section> container horizontally */
+        gap: 2rem;      /*Creating space beween product <div>*/
+    }
+   .product {       /*.product is a class that includes the <div> containers of the product's images and text*/
+        text-align: center;
+        font-family: cursive;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .productPhoto {     /*.productPhoto is a class for the <div> containers product option images*/
+        width: 18.75rem;
+        border: solid black;
+        border-radius: 0.625rem;
+    }
+    /*#eggsPhoto is an id to seperate the egg photo styling from the others (.productPhoto) because the aspect
+    ratio of the image is not the same as the others*/  
+    #eggsPhoto {
+        width: 300px;
+        border: solid black;
+        border-radius: 0.625rem;
+    }
 
-.productPhoto {
-    width: 18.75rem;
-    border: solid black;
-    border-radius: 0.625rem;
-}
-
-/*footer*/
-footer {
-    width: 100%;
-    background-color: rgb(249,242,228);
+    /*footer*/
+    footer {
+        width: 100%;
+        background-color: rgb(249,242,228);
+    }
 }
 
 /*Desktop style*/
@@ -89,29 +103,30 @@ footer {
     }
     header {
         display: flex;
+        gap: 16vw;
         width:100%;
         background-color: rgb(249,242,228);
         align-items: center;
-        gap: 15rem;
+        padding-top: 2vw;
     }
     #logo {
         display: flex;
+        width: 25%;
+        background-color: rgb(249,242,228);
     }
     #imgLogo{
-        width: 18.75rem;
+        width: 100%;
     }
     #slogan {
         display: flex;
-        justify-content: center;
         background-color: rgb(249,242,228);
 
     }
     h1 {
         display: flex;
-        text-align: center;
         color: rgb(152,111,77);
         font-family: cursive;
-        font-size: 3.75rem;
+        font-size: 4vw;
     }
 
     .product:hover {
@@ -120,9 +135,86 @@ footer {
     .productPhoto:hover {
         border: 0.375rem solid black;
     }
+  nav {
+        display: flex;
+        width: 96.3%;
+        background-color: rgb(249,242,228);
+        padding-left: 3.5vw;
+    }
 
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        background-color: rgb(249,242,228);   
+        padding: 0 0 0 0.9rem;  
+    }
+    li a {
+        text-decoration: none;
+        padding: 1.0625rem;
+        color: black;
+        border: 0.0625rem solid;
+    }
     nav ul li a:hover {
         background-color: rgb(152, 111, 77);
-    }   
+    }
+    main  {
+        display: flex;
+        justify-content: center;
+        padding: 4rem 0 4rem 0;
+        width: 100%;
+        background-color: rgb(249,242,228);
+    }
+    section {
+        display: flex;
+        align-items: center;
+        background-color: rgb(249,242,228);
+    }
+    .product {
+        text-align: center;
+        font-family: cursive;
+        font-size: clamp(0.8vw,1.5vw,1.5vw);  
+        font-weight: bold;
+        width: 50%;
+        max-width: 350px;
+        background-color: rgb(249,242,228);
+    }
+    .productPhoto {
+        width:85%;
+        max-width: 350px;
+        border: solid black;
+        border-radius: 0.625rem;
+    }
+    .product:hover {
+        font-size: 1.6vw ;
+    }
+    .productPhoto:hover {
+        border: .4rem solid black;
+    }
+    #eggs {
+        padding-right: 1.2vw;
+        text-align: center;
+        font-family: cursive;
+        font-size: clamp(0.8vw,1.5vw,1.5vw);  
+        font-weight: bold;
+        width: 53.5%;
+        max-width: 369px;
+        background-color: rgb(249,242,228);
+    }
+    #eggsPhoto {
+        width: 95%;
+        max-width: 369px;
+        border: solid black;
+        border-radius: 0.625rem;
+    }
+    #eggsPhoto:hover {
+        border: .4rem solid black;
+    }
+    footer {
+        width: 100%;
+        background-color: rgb(249,242,228);
+    }
 }
+
 
