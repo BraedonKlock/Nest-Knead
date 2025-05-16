@@ -152,6 +152,9 @@
     nav ul li a:hover {
         background-color: rgb(152, 111, 77);
     }
+    a:active, a:active {
+        color: rgb(152,111,77);
+    }
     main  {
         display: flex;
         justify-content: center;

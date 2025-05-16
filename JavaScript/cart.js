@@ -13,6 +13,4 @@ function addToCart(productName, size, price, qtySelectId) {
 
     cart.push(item);
     localStorage.setItem("cart", JSON.stringify(cart));
-
-    alert(quantity + " " + size + " " + productName + "(s) added to cart. Total: $" + item.total);
 }

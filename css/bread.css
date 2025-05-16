@@ -56,6 +56,9 @@
     nav ul li a:hover {
         background-color: rgb(152,111,77);
     }
+    a:active, a:active {
+        color: rgb(152,111,77);
+    }
     #navRight {
         margin-left: 4vw;
         display: flex;
@@ -128,6 +131,12 @@
         margin: 0.5vw 0 0 0;
         border: 0.2vw solid black;
         background-color: whitesmoke;
+    }
+    button:hover, select:hover {
+        background-color: rgb(152,111,77);
+    }
+    button:active, select:active {
+        color: rgb(152,111,77);
     }
     footer {
         width: 100%;

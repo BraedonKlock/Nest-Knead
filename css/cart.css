@@ -56,6 +56,9 @@
     nav ul li a:hover {
         background-color: rgb(152,111,77);
     }
+    a:active, a:active {
+        color: rgb(152,111,77);
+    }
     #navRight {
         margin-left: 4vw;
         display: flex;
@@ -122,6 +125,12 @@
         font-size: 1vw;
         border: 0.2vw solid black;
         background-color: whitesmoke;
+    }
+    button:hover {
+        background-color: rgb(152,111,77);
+    }
+    button:active {
+        color: rgb(152,111,77);
     }
     #grandTotal {
         font-size: 1.5vw;

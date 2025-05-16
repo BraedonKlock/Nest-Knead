@@ -56,6 +56,9 @@
     nav ul li a:hover {
         background-color: rgb(152,111,77);
     }
+    a:active, a:active {
+        color: rgb(152,111,77);
+    }
     #navRight {
         margin-left: 4vw;
         display: flex;
@@ -97,7 +100,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 4vw 0 4vw 0;
+        padding: 1vw 0 4vw 0;
         background-color: rgb(249,242,228);
     }
     form {
@@ -109,6 +112,12 @@
     }
     input, textarea {
         border: .15vw solid black;
+    }
+    #submitBtn:hover {
+        background-color: rgb(152,111,77);
+    }
+    #submitBtn:active, #submitBtn:active {
+        color: rgb(152,111,77);
     }
     footer {
         width: 100%;
