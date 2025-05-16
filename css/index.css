@@ -103,15 +103,13 @@
     }
     header {
         display: flex;
-        gap: 16vw;
         width:100%;
         background-color: rgb(249,242,228);
         align-items: center;
-        padding-top: 2vw;
     }
     #logo {
         display: flex;
-        width: 25%;
+        width: 40%;
         background-color: rgb(249,242,228);
     }
     #imgLogo{
@@ -119,6 +117,9 @@
     }
     #slogan {
         display: flex;
+        justify-content: center;
+        padding-right: 11vw;
+        width: 100%;
         background-color: rgb(249,242,228);
 
     }
@@ -127,13 +128,6 @@
         color: rgb(152,111,77);
         font-family: cursive;
         font-size: 4vw;
-    }
-
-    .product:hover {
-        font-size: larger;
-    }
-    .productPhoto:hover {
-        border: 0.375rem solid black;
     }
   nav {
         display: flex;
@@ -145,6 +139,7 @@
         display: flex;
         list-style-type: none;
         gap: 1vw;
+        font-size: .9vw;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
         background-color: rgb(249,242,228);   
     }
@@ -152,7 +147,7 @@
         text-decoration: none;
         padding: 1vw;
         color: black;
-        border: 0.0625rem solid;
+        border: 0.15vw solid;
     }
     nav ul li a:hover {
         background-color: rgb(152, 111, 77);
@@ -167,6 +162,7 @@
     section {
         display: flex;
         align-items: center;
+        justify-content: center;
         background-color: rgb(249,242,228);
     }
     .product {
@@ -174,13 +170,11 @@
         font-family: cursive;
         font-size: clamp(0.8vw,1.5vw,1.5vw);  
         font-weight: bold;
-        width: 50%;
-        max-width: 350px;
+        width: 20%;
         background-color: rgb(249,242,228);
     }
     .productPhoto {
         width:85%;
-        max-width: 350px;
         border: solid black;
         border-radius: 0.625vw;
     }
@@ -191,18 +185,17 @@
         border: .4vw solid black;
     }
     #eggs {
-        padding-right: 1.2vw;
+        margin-right: 1.2vw;
+
         text-align: center;
         font-family: cursive;
         font-size: clamp(0.8vw,1.5vw,1.5vw);  
         font-weight: bold;
-        width: 53.5%;
-        max-width: 369px;
+        width: 21.3%;
         background-color: rgb(249,242,228);
     }
     #eggsPhoto {
         width: 95%;
-        max-width: 369px;
         border: solid black;
         border-radius: 0.625vw;
     }

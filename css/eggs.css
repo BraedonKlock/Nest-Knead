@@ -43,6 +43,7 @@
         display: flex;
         list-style-type: none;
         gap: 1vw;
+        font-size: .9vw;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
         background-color: rgb(249,242,228);   
     }
@@ -50,7 +51,7 @@
         text-decoration: none;
         padding: 1.0625vw;
         color: black;
-        border: 0.0625vw solid;
+        border: 0.15vw solid;
     }
     nav ul li a:hover {
         background-color: rgb(152,111,77);
@@ -88,14 +89,47 @@
         border: solid black;
         border-radius: 0.625vw;
     }
-    #eggs #eggsPhoto:hover {
+    #eggsPhoto:hover {
         border: 0.375vw solid black;
     }
-    main  {
-        padding: 4vw 0 4vw 0;
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        width: 100%;
         background-color: rgb(249,242,228);
+        margin: 0;
+        padding: 4vw 2vw 4vw 2vw;
+    } 
+    table {
+        width: 70%;
+        border: 0.125vw solid black;
+    }
+    table, tr,td,th {
+        border: 0.2vw solid black;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 1.25vw;
+        font-family: cursive;
+        padding: 0.625vw 0 0.625vw 0.625vw;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        width: 7vw;
+        height: auto;
+        font-size: 1vw;
+        border: 0.2vw solid black;
+        background-color: whitesmoke;
+        margin: .5vw 0 0 0;
+    }
+    select{
+        display: flex;
+        font-size: 1vw;
+        margin: 0.5vw 0 0 0;
+        border: 0.2vw solid black;
+        background-color: whitesmoke;
     }
     #description {
         font-family: cursive;

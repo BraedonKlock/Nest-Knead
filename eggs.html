@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="contact.html">CART</a></li>
+                <li><a href="cart.html">CART</a></li>
             </ul>
         </section >
         <section id="navRight">
@@ -27,8 +27,36 @@
         </section>
     </nav>
     <main>
-        <p id="description">At Fluffy Butt Hut, our eggs are collected daily from well-cared-for hens raised right here on the farm. Never treated with chemicals or preservatives, our eggs are rich in flavor, vibrant in color, and packed with natural nutrients. Whether you're baking sourdough, flipping pancakes, or just cracking one open for breakfast, you'll taste the difference that true farm-fresh quality makes.</p>
+        <p id="description">At Fluffy Butt Hut, our eggs are collected daily from well-cared-for hens raised right here on the farm. Never treated with chemicals or preservatives, our eggs are rich in flavor, vibrant in color, and packed with natural nutrients. Whether you're baking sourdough, flipping pancakes, or just cracking one open for breakfast, you'll taste the difference that true farm-fresh quality makes.
+        </p>
+        <table>
+            <tr>
+                <th>Eggs</th>
+                <th>Size</th>
+                <th>Price</th>
+                <th>Add to Cart</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Eggs</td>
+                <td>Dozen</td>
+                <td>$5.00</td>
+    <td>
+        <button onclick="addToCart('Eggs', 'Dozen', 5.00, 'qty1')">Add to Cart</button>
+    </td>
+    <td>
+        <select id="qty1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </td>
+        </tr>
+        </table>
     </main>
     <footer></footer>
+    <script src="JavaScript/cart.js"></script>
 </body>
 </html>

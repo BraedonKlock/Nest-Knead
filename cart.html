@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Nest & Knead</title>
+    <link rel="styleSheet" type="text/css" href="css/cart.css">
+    <script></script>
+</head>
+<body>
+    <header>
+        <div id="logo"><a href="index.html"><img id ="imgLogo" src="photos/logo.png"></a></div>
+        <div id="slogan"><h1>Cart</h1></div>
+    </header>
+    <nav>
+        <section id="navLeft">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="cart.html">CART</a></li>
+            </ul>
+        </section >
+        <section id="navRight">
+            <div  class="product" id="eggs"><p>Farm fresh Eggs</p><a href="eggs.html"><img id="eggsPhoto" src="photos/eggs.jpg"></a></div>
+            <div class="product"><p>Sourdough Bread</p><a href="bread.html"><img class="productPhoto" src="photos/bread.jpg"></a></div>
+            <div class="product" ><p>Garden Vegetables</p><a href="vegetables.html"><img class="productPhoto" src="photos/vegetables.jpg"></a></div>
+            <div class="product" ><p>Dessert</p><a href="dessert.html"><img class="productPhoto" src="photos/dessert.jpg"></a></div>
+        </section>
+    </nav>
+    <main>
+        <h1>Your Cart</h1>
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Size</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="cartBody">
+            </tbody>
+        </table>
+        <p id="grandTotal"></p>
+        <p id="payment">Etransfer: notArealEmail@example.com</p>
+        </main>
+    <footer></footer>
+    <script src="JavaScript/cart.js"></script>
+    <script src="JavaScript/displayCart.js"></script>
+</body>
+</html>

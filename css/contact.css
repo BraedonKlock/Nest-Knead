@@ -43,6 +43,7 @@
         display: flex;
         list-style-type: none;
         gap: 1vw;
+        font-size: .9vw;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
         background-color: rgb(249,242,228);   
     }
@@ -50,7 +51,7 @@
         text-decoration: none;
         padding: 1.0625vw;
         color: black;
-        border: 0.0625vw solid;
+        border: 0.15vw solid;
     }
     nav ul li a:hover {
         background-color: rgb(152,111,77);
@@ -89,7 +90,7 @@
         border: solid black;
         border-radius: 0.625vw;
     }
-    #eggs #eggsPhoto:hover {
+    #eggsPhoto:hover {
         border: 0.375vw solid black;
     }
     main {

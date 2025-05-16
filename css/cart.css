@@ -1,0 +1,139 @@
+@media (min-width: 1300px) {    
+    body {
+        background-color: white;
+        padding: 0 2vw 0 2vw ;
+    }
+    header {
+        display: flex;
+        width:100%;
+        background-color: rgb(249,242,228);
+        align-items: center;
+        gap: 15vw;
+    }
+    #logo {
+        display: flex;
+        width: 25%;
+    }
+    #imgLogo{
+        width: 100%;
+    }
+    #slogan {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(249,242,228);
+    }
+    h1 {
+        display: flex;
+        text-align: center;
+        color: rgb(152,111,77);
+        font-family: cursive;
+        font-size: 4vw;
+    }
+    nav {
+        display: flex;
+        width: 100%;
+        background-color: rgb(249,242,228);
+    }
+    #navLeft{
+        display: flex;
+        align-items: center;
+        background-color: rgb(249,242,228);
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 1vw;
+        font-size: .9vw;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        background-color: rgb(249,242,228);   
+    }
+    li a {
+        text-decoration: none;
+        padding: 1.0625vw;
+        color: black;
+        border: 0.15vw solid;
+    }
+    nav ul li a:hover {
+        background-color: rgb(152,111,77);
+    }
+    #navRight {
+        margin-left: 4vw;
+        display: flex;
+        gap: 2vw;
+        background-color: rgb(249,242,228);
+    }
+    .product {
+        text-align: center;
+        font-family: cursive;
+        font-size: 0.9375vw;
+        font-weight: bold;
+        width: 17%;
+    }
+    .productPhoto {
+        width: 100%;
+        border: solid black;
+        border-radius: 0.625vw;
+    }
+    .product:hover {
+        font-size: 1.0625vw ;
+    }
+    .productPhoto:hover {
+        border: 0.375vw solid black;
+    }
+    #eggs {
+        width: 21.3%;
+        background-color: rgb(249,242,228);
+    }
+    #eggsPhoto {
+        width: 96%;
+        border: solid black;
+        border-radius: 0.625vw;
+    }
+    #eggsPhoto:hover {
+        border: 0.375vw solid black;
+    }
+    main  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(249,242,228);
+    }
+    table {
+        width: 70%;
+        border: 0.125vw solid black;
+        background-color: rgb(249,242,228);
+    }
+    table, tr,td,th {
+        border: 0.2vw solid black;
+        border-collapse: collapse;
+        text-align: left;
+        font-family: cursive;
+        font-size: 1.25vw;
+        padding: 0.625vw 0 0.625vw 0.625vw;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        width: 6vw;
+        height: auto;
+        font-size: 1vw;
+        border: 0.2vw solid black;
+        background-color: whitesmoke;
+    }
+    #grandTotal {
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+    #payment {
+        font-weight: bold;
+        font-size: 1.5vw;
+        color: red;
+    }
+    footer {
+        width: 100%;
+        background-color: rgb(249,242,228);
+    }
+}

@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="contact.html">CART</a></li>
+                <li><a href="cart.html">CART</a></li>
             </ul>
         </section >
         <section id="navRight">
@@ -27,6 +27,34 @@
         </section>
     </nav>
     <main>
+        <table>
+            <tr>
+                <th>Bread</th>
+                <th>Size</th>
+                <th>Price</th>
+                <th>Add to Cart</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Bread</td>
+                <td>1 Loaf</td>
+                <td>$8.00</td>
+    <td>
+        <button onclick="addToCart('Bread', '1 Loaf', 8.00, 'qty1')">Add to Cart</button>
+    </td>
+    <td>
+        <select id="qty1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </td>
+        </tr>
+        </table>
+    </main>
     <footer></footer>
+    <script src="JavaScript/cart.js"></script>
 </body>
 </html>

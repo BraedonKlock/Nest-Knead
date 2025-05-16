@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="contact.html">CART</a></li>
+                <li><a href="cart.html">CART</a></li>
             </ul>
         </section >
         <section id="navRight">
@@ -30,26 +30,39 @@
         <table>
             <tr>
                 <th>Vegetables</th>
-                <th>Quantity</th>
+                <th>Size</th>
                 <th>Price</th>
+                <th>Add to Cart</th>
+                <th>Quantity</th>
             </tr>
             <tr>
                 <td>Tomatoes</td>
                 <td>Small Basket<br>Medium Basket</td>
                 <td>$5.00<br>$8.00</td>
-            </tr>
-            <tr>
-                <td>Jalepenos</td>
-                <td>Small Basket<br>Medium Basket</td>
-                <td>$4.00<br>$7.00</td>
-            </tr>
-            <tr>
-                <td>Lettuce</td>
-                <td>Small Basket<br>Medium Basket</td>
-                <td>$3.00<br>$5.00</td>
-            </tr>
+    <td>
+        <button onclick="addToCart('Tomatoes', 'Small Basket', 5.00, 'qty1')">Add to Cart</button>
+        <button onclick="addToCart('Tomatoes', 'Medium Basket', 8.00, 'qty2')">Add to Cart</button>
+    </td>
+    <td>
+        <select id="qty1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <select id="qty2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </td>
+        </tr>
         </table>
     </main>
     <footer></footer>
+    <script src="JavaScript/cart.js"></script>
 </body>
 </html>
