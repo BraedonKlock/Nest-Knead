@@ -62,7 +62,7 @@ function displayCart() {
         grandTotal += parseFloat(item.total);   // Adding the item total to grand total
     }
     const totalLabel = document.createTextNode("Total: $" + grandTotal.toFixed(2));
-    grandTotalElement.textContent = "";     // Clear old text
+    grandTotalElement.textContent = ""; // Clear old text
     grandTotalElement.appendChild(totalLabel);
 }
 //

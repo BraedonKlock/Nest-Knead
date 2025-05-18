@@ -1,4 +1,101 @@
-@media (min-width: 1300px) {    
+/*Mobile style*/
+@media(max-width: 600px) {
+    body {
+        background-color: rgb(249, 242, 228);
+    }
+    /*Header and it's elements*/
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        background-color: rgb(249, 242, 228);
+    }
+    #logo {
+        background-color: rgb(249, 242, 228);
+        width: 75%;
+    }
+    #imgLogo{     /*Logo*/
+        width: 100%;
+    }
+    #slogan {   /*Slogan: Fluffy Butt Hutt*/
+        background-color: rgb(249, 242, 228);
+        text-align: center;
+        font-size: 3vw;
+        font-family: cursive;
+        color:rgb(152,111,77);
+        width: 75%;
+    }
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    /*Centers the <ul> container on the cross axis of the <nav> flex container*/
+        justify-content: center;    /*Centers the <ul> container on the main axis of the <nav> flex container*/
+        gap: 3vw;
+        background-color: rgb(249, 242, 228);
+        padding: 7vw 0 7vw 0;     /*Giving space around <nav> container for visual appeal*/
+    }
+    #navLeft{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(249, 242, 228);
+    }
+    ul {
+        display: flex;
+        list-style-type: none;      /*Removing list bullets*/
+        justify-content: center;     /*Centers the <li> items on the main axis of the <ul> flex container*/
+        gap: 2vw;      /*Creating space between <li> items*/
+        margin: 0;      /*Set to zero to prevent spaces*/
+        padding: 0;     /*Set to 0 to remove spaces*/
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(249, 242, 228);
+    }
+    li a {
+        text-decoration: none;      /*Removing link underline from <a>*/
+        padding: 1vw;      /*Giving space around <li> characters for visual appeal*/
+        color: black;
+        border: .8vw solid black;
+        font-size: 5Svw;
+    }
+    a:active, a:active {
+        color: rgb(152,111,77);
+    }
+    #navRight {
+        display: flex;
+        overflow-x: auto;
+        align-items: center;
+        gap: 4vw;
+        background-color: rgb(249, 242, 228);
+    }
+    .product {
+        flex: 0 0 auto; /* ⬅️ Prevent shrinking and make the width matter */
+        text-align: center;
+        font-family: cursive;
+        font-size: 5vw;
+        font-weight: bold;
+        width: 53%;
+        background-color: rgb(249, 242, 228);
+    }
+    .productPhoto {
+        width: 95%;
+        border: solid black;
+        border-radius: 1vw;
+    }
+    #eggs {
+        width: 62%;
+        background-color: rgb(249, 242, 228);
+    }
+    #eggsPhoto {
+        width: 96%;
+        border: solid black;
+        border-radius: 1vw;
+    }
+}
+
+/*Desktop style*/
+@media (min-width: 1100px) {    
     body {
         background-color: white;
         padding: 0 2vw 0 2vw ;
