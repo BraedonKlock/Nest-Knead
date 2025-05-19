@@ -70,7 +70,7 @@
         background-color: rgb(249, 242, 228);
     }
     .product {
-        flex: 0 0 auto; /* ⬅️ Prevent shrinking and make the width matter */
+        flex: 0 0 auto;
         text-align: center;
         font-family: cursive;
         font-size: 5vw;
@@ -91,6 +91,32 @@
         width: 96%;
         border: solid black;
         border-radius: 1vw;
+    }
+    main {
+        display: flex;
+        align-items: center;
+        padding: 1vw 0 4vw 0;
+        background-color: rgb(249,242,228);
+    }
+    form {
+        text-align: left;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 3vw;
+        background-color: rgb(249,242,228);
+    }
+    input, textarea {
+        border: .7vw solid black;
+    }
+    textarea {
+        width: 98%;
+    }
+    #submitBtn:active, #submitBtn:active {
+        color: rgb(152,111,77);
+    }
+    footer {
+        width: 100%;
+        background-color: rgb(249,242,228);
     }
 }
 

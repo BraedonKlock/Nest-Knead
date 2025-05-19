@@ -70,7 +70,7 @@
         background-color: rgb(249, 242, 228);
     }
     .product {
-        flex: 0 0 auto; /* ⬅️ Prevent shrinking and make the width matter */
+        flex: 0 0 auto;
         text-align: center;
         font-family: cursive;
         font-size: 5vw;
@@ -91,6 +91,61 @@
         width: 96%;
         border: solid black;
         border-radius: 1vw;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(249,242,228);
+        margin: 0;
+        padding: 3vw 2vw 4vw 2vw;
+    } 
+    .tableWrapper { /**/
+        margin-top: 3vw;
+        width: 100%;
+        overflow-x: auto;
+    }
+    table {
+        border: 1vw solid black;
+        border-collapse: collapse;
+        min-width: 250vw; /* Make it scroll on small screens */  
+    }
+    tr,td,th {
+        border: 1vw solid black;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 5vw;
+        font-family: cursive;
+        padding: 3vw 3vw 3vw 3vw;
+    }
+    button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 35vw;
+        height: auto;
+        font-size: 4vw;
+        border: 1vw solid black;
+        background-color: whitesmoke;
+        margin: 1vw 0 0 0;
+    }
+    select{
+        display: flex;
+        flex-direction: column;
+        font-size: 4vw;
+        border: 1vw solid black;
+        background-color: whitesmoke;
+        margin: 1vw 0 0 0;
+    }
+    button:active, select:active {
+        color: rgb(152,111,77);
+    }
+    footer {
+        width: 100%;
+        background-color: rgb(249,242,228);
     }
 }
 
@@ -199,8 +254,11 @@
         background-color: rgb(249,242,228);
         padding: 4vw 2vw 4vw 2vw;
     }
-    table {
+    .tableWrapper {
         width: 70%;
+    }
+    table {
+        width: 100%;
         border: 0.125vw solid black;
     }
     table, tr,td,th {
